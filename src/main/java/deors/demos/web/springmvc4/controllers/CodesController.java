@@ -1,4 +1,4 @@
-package deors.demos.web.springmvc3.controllers;
+package deors.demos.web.springmvc4.controllers;
 
 import java.util.Collection;
 
@@ -12,8 +12,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import deors.demos.web.springmvc3.entities.Codes;
-import deors.demos.web.springmvc3.services.CodesService;
+import deors.demos.web.springmvc4.entities.Codes;
+import deors.demos.web.springmvc4.services.CodesService;
 
 /**
  * Controller for Codes table views.

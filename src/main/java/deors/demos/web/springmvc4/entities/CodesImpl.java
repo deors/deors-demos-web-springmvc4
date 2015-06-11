@@ -1,4 +1,4 @@
-package deors.demos.web.springmvc3.entities;
+package deors.demos.web.springmvc4.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

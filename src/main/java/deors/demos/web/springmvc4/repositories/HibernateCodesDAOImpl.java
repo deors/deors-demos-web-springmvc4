@@ -1,12 +1,12 @@
-package deors.demos.web.springmvc3.repositories;
+package deors.demos.web.springmvc4.repositories;
 
 import java.util.Collection;
 
-import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.orm.hibernate4.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
-import deors.demos.web.springmvc3.entities.Codes;
-import deors.demos.web.springmvc3.entities.CodesImpl;
+import deors.demos.web.springmvc4.entities.Codes;
+import deors.demos.web.springmvc4.entities.CodesImpl;
 
 /**
  * The Codes data access object implementation using Hibernate.

@@ -1,8 +1,8 @@
-package deors.demos.web.springmvc3.repositories;
+package deors.demos.web.springmvc4.repositories;
 
 import java.util.Collection;
 
-import deors.demos.web.springmvc3.entities.Codes;
+import deors.demos.web.springmvc4.entities.Codes;
 
 /**
  * The Codes data access object interface.

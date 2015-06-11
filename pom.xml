@@ -5,25 +5,25 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>deors.demos.web.springmvc3</name>
+    <name>deors.demos.web.springmvc4</name>
 
     <groupId>deors.demos</groupId>
-    <artifactId>deors.demos.web.springmvc3</artifactId>
+    <artifactId>deors.demos.web.springmvc4</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <description>Spring MVC 3 demo</description>
+    <description>Spring MVC 4 demo</description>
 
     <properties>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
 
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
 
         <javaee.version>6.0</javaee.version>
         <jstl.version>1.2</jstl.version>
 
-        <spring.version>3.0.6.RELEASE</spring.version>
-        <hibernate.version>3.6.9.Final</hibernate.version>
+        <spring.version>4.1.6.RELEASE</spring.version>
+        <hibernate.version>4.3.10.Final</hibernate.version>
         <commons-collections.version>3.2.1</commons-collections.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <javassist.version>3.12.0.GA</javassist.version>
@@ -33,16 +33,14 @@
         <junit.version>4.11</junit.version>
         <easymock.version>3.2</easymock.version>
 
-        <jacoco.version>0.7.0.201403182114</jacoco.version>
+        <jacoco.version>0.7.1.201405082137</jacoco.version>
         <jacoco.path>${settings.localRepository}/org/jacoco/org.jacoco.agent/${jacoco.version}/org.jacoco.agent-${jacoco.version}-runtime.jar</jacoco.path>
         <jacoco.utReport>${project.build.directory}/jacoco.exec</jacoco.utReport>
-        <jacoco.itReport>${project.build.directory}/jacoco.itest</jacoco.itReport>
+        <jacoco.itReport>${project.build.directory}/jacoco-it.exec</jacoco.itReport>
         <jacoco.utAgentConfig>-javaagent:${jacoco.path}=destfile=${jacoco.utReport}</jacoco.utAgentConfig>
         <jacoco.itAgentConfig>-javaagent:${jacoco.path}=destfile=${jacoco.itReport}</jacoco.itAgentConfig>
 
-        <jacoco-listeners.version>2.3</jacoco-listeners.version>
-
-        <sonar.jacoco.itReportPath>${jacoco.itReport}</sonar.jacoco.itReportPath>
+        <jacoco-listeners.version>2.5.1</jacoco-listeners.version>
     </properties>
 
     <build>
@@ -78,7 +76,6 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.17</version>
                 <configuration>
-                    <argLine>${jacoco.itAgentConfig}</argLine>
                     <includes>
                         <include>**/it/*TestCase.java</include>
                     </includes>

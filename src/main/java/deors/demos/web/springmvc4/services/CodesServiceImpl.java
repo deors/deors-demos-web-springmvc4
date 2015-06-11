@@ -1,4 +1,4 @@
-package deors.demos.web.springmvc3.services;
+package deors.demos.web.springmvc4.services;
 
 import java.util.Collection;
 
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import deors.demos.web.springmvc3.entities.Codes;
-import deors.demos.web.springmvc3.repositories.CodesDAO;
+import deors.demos.web.springmvc4.entities.Codes;
+import deors.demos.web.springmvc4.repositories.CodesDAO;
 
 /**
  * The Codes service implementation using Spring Transaction.
